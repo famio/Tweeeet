@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q8w-yV-Set">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tweeeet View Controller-->
+        <scene sceneID="LAe-ZH-GeG">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Q8w-yV-Set" customClass="TweeeetViewController" customModule="Twittter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="meo-WJ-iwH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBw-he-7Jz" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9k-4b-zNk" userLabel="Cancel Button">
+                                        <rect key="frame" x="16" y="0.0" width="48" height="49"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapCancelButton:" destination="Q8w-yV-Set" eventType="touchUpInside" id="Yqa-q7-Kej"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USx-e5-rmH" userLabel="Line View">
+                                        <rect key="frame" x="0.0" y="49" width="414" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="jof-uy-6T3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="W0w-fU-Gvj"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="n9k-4b-zNk" firstAttribute="leading" secondItem="W0w-fU-Gvj" secondAttribute="leading" constant="16" id="1Kv-3Q-Ulo"/>
+                                    <constraint firstItem="USx-e5-rmH" firstAttribute="top" secondItem="n9k-4b-zNk" secondAttribute="bottom" id="BON-0X-zyi"/>
+                                    <constraint firstAttribute="height" constant="50" id="Fqi-oh-OEO"/>
+                                    <constraint firstItem="n9k-4b-zNk" firstAttribute="top" secondItem="xBw-he-7Jz" secondAttribute="top" id="N3F-xn-cbo"/>
+                                    <constraint firstItem="USx-e5-rmH" firstAttribute="leading" secondItem="xBw-he-7Jz" secondAttribute="leading" id="NM6-i9-1FK"/>
+                                    <constraint firstAttribute="trailing" secondItem="USx-e5-rmH" secondAttribute="trailing" id="afp-8M-ZZE"/>
+                                    <constraint firstAttribute="bottom" secondItem="USx-e5-rmH" secondAttribute="bottom" id="pNf-PD-VIg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tXN-GJ-p72"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xBw-he-7Jz" firstAttribute="leading" secondItem="meo-WJ-iwH" secondAttribute="leading" id="HKL-zU-0qP"/>
+                            <constraint firstItem="xBw-he-7Jz" firstAttribute="top" secondItem="tXN-GJ-p72" secondAttribute="top" id="kbt-Q7-eQA"/>
+                            <constraint firstAttribute="trailing" secondItem="xBw-he-7Jz" secondAttribute="trailing" id="uO6-hv-otZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fK-mF-bO5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-490" y="-71"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
